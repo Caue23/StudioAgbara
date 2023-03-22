@@ -11,6 +11,9 @@
 .container__botao{
     display: none;
 }
+.container{
+    display: none;
+}
 
   ul {
     display: grid;
