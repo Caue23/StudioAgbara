@@ -1,0 +1,285 @@
+.Container{
+    margin-top: 2rem;
+    align-items: center;
+}
+.cabecalho__menu-hamburguer{
+    display: none;
+}
+.lista-menu{
+    display: none;
+}
+.container__botao{
+    display: none;
+}
+
+  ul {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 400px repeat(5, 1fr) 300px;
+  }
+  ul img{
+    display: flex;
+    justify-self: center;
+    width: 120px;
+
+  }
+  li{
+    align-self: center;
+    list-style-type: none;
+  }
+  a{
+      width: 150px;    
+      font-size: 25px;
+      line-height: 29px;
+      display: flex;
+      align-items: center;
+      color: var(--white);
+
+      cursor: pointer;
+  }
+  a:hover{
+    color:rgb(2, 139, 2)
+  }
+
+  
+  h1{
+    display:flex;
+    color: var(--white);
+    font-size: 110px;
+    justify-content: center;
+    margin: auto;
+  }
+
+article{
+    display:flex;
+    justify-content: center;
+    margin: 11rem 0;
+
+}
+
+button  {
+    display: flex;
+    width: 300px;
+    height: 60px;
+    margin:0 3rem;
+    align-items: center;
+
+    cursor: pointer;
+
+    font-size: 24px;
+    font-family: var(--fonte-principal);
+    color: #FFFFFF;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    border-radius: 36px;
+}
+button img {
+    margin: 0 2rem;
+}
+
+.GroupAnimals{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.GroupAnimals img{
+    width: 150px;
+}
+
+.Content::after{
+    background-color: rgba(222, 222, 222, 1);
+    content: "";
+    display: flex;
+    height: 1px;
+    width: 70%;
+    margin: auto;
+    
+    
+}
+.titleProdutos h1::after{
+    background-color: rgba(222, 222, 222, 1);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 360px;
+    
+}
+
+.Sobre {
+    margin: 5rem 0;
+}
+.Sobre h2{
+    display: flex;
+    width: 500px;
+    color: var(--white);
+    font-size: 40px;
+    text-align: justify;
+    justify-content: end;
+}
+.Sobre text{
+    display: flex;
+    width: 900px;
+    color: var(--white);
+    font-size: 40px;
+    text-align: justify;
+    margin: auto;
+}
+.Sobre img{
+    display: flex;
+    color: var(--white);
+    font-size: 40px;
+    text-align: justify;
+    margin: auto;
+}
+.Sobre::after{
+    background-color: rgba(222, 222, 222, 1);
+    content: "";
+    display: flex;
+    height: 1px;
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+    
+}
+.Contatos{
+    margin: 0 0 5rem 0;
+}
+.Contatos h3{
+    display: flex;
+    width: 500px;
+    color: var(--white);
+    font-size: 40px;
+    text-align: justify;
+    justify-content: end;
+}
+.Contatos img{
+    display: flex;
+    color: var(--white);
+    font-size: 40px;
+    text-align: justify;
+}
+footer{
+    display:flex;
+    justify-content: center;
+    margin: 5rem 0;
+
+}
+
+@media screen and (max-width: 480px) {
+    .Container{
+        display: none;
+    }
+    .cabecalho__menu-hamburguer{
+        width: 24px;
+        height: 24px;
+        background-image: url("../images/menu-branco.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+    }
+    .cabecalho {
+        background-color: var(--white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer{
+        background: url("../images/Menu.svg") no-repeat;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .container__imagem {
+        margin: 0 0 0 4rem;
+        padding: 0.7em;
+    }
+    .lista-menu {
+        display:none;
+        position:absolute;
+        top:5%;
+        width: 20vw;
+    
+    }
+    .container__botao:checked ~ .lista-menu {
+        display: block;
+        margin-left: 180px;
+    }
+    .lista-menu__titulo, .lista-menu__item{
+        padding: 0.5em;
+        background-color: var(--cinza-claro);
+        font-size: 14px;
+    }
+    .lista-menu__titulo {
+        color: var(--preto);
+        font-weight: 700;
+    }
+    .lista-menu__link {
+        font-size: 14px;
+        background: var(--preto);
+        font-weight: 700;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-transform: uppercase;
+    }
+    .coroa{
+        width: 60px;
+    }
+
+    h1{
+        margin: 1rem 0 0 0;
+        font-size: 40px;
+    }
+    article{
+        margin: 3rem 0;
+    }
+    button{
+        width: 120px;
+        height: 35px;
+        font-size: 12px;
+        margin: 0 1rem;
+    }
+    button img{
+        width: 15px;
+        margin: 0 0.4rem;
+    }
+
+    .Sobre{
+        margin: 1rem 0 0 0;
+    }
+
+    .Sobre h2{
+        width: 80%;
+        font-size: 12px;
+        text-align: justify;
+        justify-content: flex-start;
+        margin-left: 5rem;
+    }
+
+    .Sobre text {
+        width: 310px;
+        font-size: 12px;
+    }
+    .Sobre img{
+        width: 50%;
+    }
+    footer {
+        margin: 2rem 0;
+    }
+    .Contatos {
+        margin: 0;
+    }
+    .Contatos h3 {
+        width: 80%;
+        font-size: 12px;
+        text-align: justify;
+        justify-content: flex-start;
+        margin-left: 5rem;
+    }
+  }

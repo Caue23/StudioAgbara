@@ -1,0 +1,32 @@
+@import url("styles/header.css");
+
+:root {
+  --cor-de-fundo: #EBECEE;
+  --white: #ffffff;
+  --laranja:#EB9B00;
+  --azul: #002F52;
+  --preto:  #000000;
+  --cinza:  #474646;
+  --cinza-claro:#858585;
+  --azul-degrade:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  --fonte-principal: "Julee";
+  --fonte-secundaria: "Josefin Sans";
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-principal);
+  background: #000000;
+  background-image: url("./images/linha2.png"), url("./images/linha2.png");
+  background-repeat: no-repeat;
+  background-position: right, left;
+
+}
+
+@media screen and (max-width: 480px) {
+  body{
+    background-size: 50px;
+    
+  }
+}
